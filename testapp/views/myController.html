@@ -1,0 +1,22 @@
+<div class="table-responsive" style="margin-left: 90px;width: 450px;float: left">
+    <p style="font-weight: bold">
+        Filter Doctor(s):<input type="text" ng-model="filter_doctors"/>
+    </p>
+    <table class="table table-condensed" style="width:435px; border:solid; border-color:brown">
+        <thead>
+        <th style="border-bottom:dashed; border-color: brown"> No.</th>
+        <th style="border-bottom:dashed; border-color: brown"> Name of Doctor</th>
+        <th style="border-bottom:dashed; border-color: brown"> Area of Speciality</th>
+        <th style="border-bottom:dashed; border-color: brown"> Profile(s)</th>
+        <tr style="border-bottom:dashed; border-color: brown"
+            ng-repeat="doctor in result|filter:filter_doctors|orderBy:'name'" class="repeat-animation">
+            <td> {{ $index + 1 }}</td>
+            <td> {{ doctor.name }}</td>
+            <td> {{ doctor.speciality }}</td>
+            <td>
+                <a href="#/profile/{{doctor.id}}"> View Profile </a>
+            </td>
+        </tr>
+        </thead>
+    </table>
+</div>

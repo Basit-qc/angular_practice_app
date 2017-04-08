@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="mainApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS Services</title>
+</head>
+
+<!--<link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link href="static/css/style.css" rel="stylesheet" type="text/css">
+<link href="static/css/ng-animate.css" rel="stylesheet" type="text/css">
+<body style="background-color: palegoldenrod">
+
+<!--ng-include-->
+<div ng-include="'templates/header.html'"></div>
+<div ng-include="'templates/main_display.html'"></div>
+
+<!--ng-view-->
+<div ng-view></div>
+
+<!--scripts_all-->
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-animate.min.js"></script>
+<script src="app.js"></script>
+<script src="Controllers/Home.js"></script>
+<script src="Controllers/myController.js"></script>
+<script src="Controllers/Profile.js"></script>
+<script src="Controllers/profile_directive.js"></script>
+<script src="Controllers/Patients.js"></script>
+<script src="services/doctor_list.js"></script>
+<script src="services/doctor_profile.js"></script>
+<script src="CustomDirective/ProfileDirective.js"></script>
+
+</body>
+</html>

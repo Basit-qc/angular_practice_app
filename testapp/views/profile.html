@@ -1,0 +1,34 @@
+<div>
+    <div ng-include="'views/myController.html'"></div>
+    <div ng-controller="profile_directive" style="color: brown;width: 450px; float: right; margin-right: 260px; margin-top: 18px;">
+        <img src="static/img/doctor_{{profile.id}}.jpg"
+             style="width: 250px;height: 300px;border-radius: 25px;float: right;margin-right:-175px">
+        <!--<h3>Name: </h3>-->
+
+        <!--<h3 style="margin-left: 100px">-->
+            <!--<u>{{profile.name}}</u>-->
+        <!--</h3>-->
+
+        <!--<h3>Speciality: </h3>-->
+
+        <!--<h3 style="margin-left: 100px">-->
+            <!--<u>{{profile.speciality}}</u>-->
+        <!--</h3>-->
+
+        <!--<h3>Education: </h3>-->
+
+        <!--<h3 style="margin-left: 100px">-->
+            <!--<u>{{profile.education}}</u>-->
+        <!--</h3>-->
+
+        <!--<h3>Address: </h3>-->
+
+        <!--<h3 style="margin-left: 100px">-->
+            <!--<u>{{profile.address}}</u>-->
+        <!--</h3>-->
+        <profile name="Waqas" ng-if="profile.id==1"></profile>
+        <profile name="Zohaib" ng-if="profile.id==2"></profile>
+        <profile name="Ahmad" ng-if="profile.id==3"></profile>
+        <profile name="Nauman" ng-if="profile.id==4"></profile>
+    </div>
+</div>
